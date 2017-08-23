@@ -1,7 +1,6 @@
-# README
+# Snapr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A photo-sharing website built to practice working with Ruby gems including Devise, Paperclip, and TDD gems such as Rspec, Capybara, and FactoryGirl.
 
 Things you may want to cover:
 
