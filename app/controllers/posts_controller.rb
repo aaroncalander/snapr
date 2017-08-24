@@ -10,7 +10,14 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
-    redirect_to posts_path
+
+    if @post.save
+      flash[:success] = "Post was successfully created."
+      redirect_to posts_path
+    else
+      flash[:alert] = "No photo, no bueno. Photo por favor!"
+      render :new
+    end
   end
 
   def show
