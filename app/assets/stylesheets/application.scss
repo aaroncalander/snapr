@@ -35,6 +35,7 @@ body {
   border-radius: 3px;
   border-width: 1px;
   margin-bottom: 60px;
+
   .post-head {
     flex-direction: row;
     height: 64px;
@@ -118,6 +119,33 @@ body {
 }
 
 /* ## Wrapper and styling for the new and edit views ## */
+
+=======
+}
+
+.post-head {
+  height: 64px;
+  padding: 14px 20px;
+  color: #125688;
+  font-size: 15px;
+  line-height: 18px;
+  .thumbnail {}
+  .name {
+    display: block;
+  }
+}
+
+.image {
+  border-bottom: 1px solid #eeefef;
+  border-top: 1px solid #eeefef;
+}
+
+.caption {
+  padding: 24px 24px;
+  font-size: 15px;
+  line-height: 18px;
+
+}
 
 .form-wrapper {
   width: 60%;
