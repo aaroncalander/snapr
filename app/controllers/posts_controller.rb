@@ -16,7 +16,7 @@ class PostsController < ApplicationController
       flash[:success] = "Post was successfully created."
       redirect_to posts_path
     else
-      flash[:alert] = "No photo, no bueno. Photo por favor!"
+      flash[:alert] = "Your new post wasn't created! Please check the form and try again."
       render :new
     end
   end
@@ -41,7 +41,7 @@ class PostsController < ApplicationController
   def destroy
     if @post.destroy
       flash[:success] = "You have successfully deleted that post."
-    redirect_to posts_path
+      redirect_to posts_path
     else
       flash.now[:alert] = "Your post wasn't deleted. Please try again."
       render :edit
